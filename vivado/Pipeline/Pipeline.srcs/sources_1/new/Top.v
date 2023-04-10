@@ -48,7 +48,7 @@ always @ (posedge clk)
      clkdiv <= clkdiv + 1'b1; 
      
      
-assign Clk_CPU = (sw_i[15]) ? clkdiv[25] : clkdiv[1];
+assign Clk_CPU = (sw_i[15]) ? clkdiv[25] : clkdiv[0];
 
 always@(negedge Clk_CPU)
 begin

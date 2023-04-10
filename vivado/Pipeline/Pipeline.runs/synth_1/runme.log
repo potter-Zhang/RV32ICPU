@@ -14,22 +14,22 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6008 
+INFO: Helper process launched with PID 14152 
 WARNING: [Synth 8-2306] macro DM_WORD redefined [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/Pipeline.v:4]
 WARNING: [Synth 8-2306] macro DM_WORD redefined [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/Defines.v:11]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 406.973 ; gain = 114.984
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 406.027 ; gain = 114.137
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:33]
 INFO: [Synth 8-6085] Hierarchical reference on 'registers' stops possible memory inference [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/RegisterFile.v:14]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:68]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:69]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:80]
 INFO: [Synth 8-6157] synthesizing module 'Pipeline' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/Pipeline.v:6]
 INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/PC.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/PC.v:3]
 INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/InstructionMemory.v:3]
-INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-9588-DESKTOP-QTJ7392/realtime/imem_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'imem' (2#1) [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-9588-DESKTOP-QTJ7392/realtime/imem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-18372-DESKTOP-QTJ7392/realtime/imem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (2#1) [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-18372-DESKTOP-QTJ7392/realtime/imem_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/InstructionMemory.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Adder4' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/Adder4.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Adder4' (4#1) [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/Adder4.v:3]
@@ -71,8 +71,8 @@ INFO: [Synth 8-6157] synthesizing module 'DataMemory' [D:/Harry/university/CPU/P
 	Parameter byte bound to: 7 - type: integer 
 	Parameter width bound to: 63 - type: integer 
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/DataMemory.v:70]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem' [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-9588-DESKTOP-QTJ7392/realtime/blk_mem_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem' (20#1) [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-9588-DESKTOP-QTJ7392/realtime/blk_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem' [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-18372-DESKTOP-QTJ7392/realtime/blk_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem' (20#1) [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/.Xil/Vivado-18372-DESKTOP-QTJ7392/realtime/blk_mem_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (21#1) [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/DataMemory.v:3]
 INFO: [Synth 8-6157] synthesizing module 'MEMWBReg' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/MEMWBReg.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'MEMWBReg' (22#1) [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/MEMWBReg.v:2]
@@ -111,7 +111,7 @@ WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[9]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[1]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port address[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 451.070 ; gain = 159.082
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 450.637 ; gain = 158.746
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -124,10 +124,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 451.070 ; gain = 159.082
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 450.637 ; gain = 158.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 451.070 ; gain = 159.082
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 450.637 ; gain = 158.746
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -162,24 +162,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 814.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.102 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.145 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.027 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 815.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 820.145 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 820.145 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 815.027 ; gain = 523.039
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 820.145 ; gain = 528.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 815.027 ; gain = 523.039
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 820.145 ; gain = 528.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -187,7 +187,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for cpu/im/memory. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for cpu/dm/memory. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 815.027 ; gain = 523.039
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 820.145 ; gain = 528.254
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "RegSrc" is below threshold of ROM address width. It will be mapped to LUTs
@@ -213,9 +213,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'immediate_reg' [D:/Harry/un
 WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/ALU.v:31]
 WARNING: [Synth 8-327] inferring latch for variable 'outData_reg' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/DataMemory.v:71]
 WARNING: [Synth 8-327] inferring latch for variable 'seg_data_r_reg' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/seg7x16.v:97]
-WARNING: [Synth 8-327] inferring latch for variable 'display_data_reg' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'display_data_reg' [D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/new/Top.v:65]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 815.027 ; gain = 523.039
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 820.145 ; gain = 528.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -244,7 +244,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 16    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 67    
+	   2 Input     32 Bit        Muxes := 68    
 	   4 Input     32 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
@@ -385,7 +385,6 @@ Detailed RTL Component Info :
 Module DataMemory 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
 Module MEMWBReg 
@@ -394,6 +393,10 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 3     
 	                5 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
+Module Pipeline 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
 Module seg7x16 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -451,7 +454,7 @@ WARNING: [Synth 8-3332] Sequential element (seg/seg_data_r_reg[2]) is unused and
 WARNING: [Synth 8-3332] Sequential element (seg/seg_data_r_reg[1]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (seg/seg_data_r_reg[0]) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 815.027 ; gain = 523.039
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 820.145 ; gain = 528.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -463,13 +466,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 815.027 ; gain = 523.039
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 820.145 ; gain = 528.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 821.094 ; gain = 529.105
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 828.086 ; gain = 536.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -481,7 +484,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -505,7 +508,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -518,7 +521,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -530,25 +533,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -571,10 +574,10 @@ Report Cell Usage:
 |3     |BUFG    |     6|
 |4     |CARRY4  |    62|
 |5     |LUT1    |    11|
-|6     |LUT2    |    53|
-|7     |LUT3    |   149|
-|8     |LUT4    |   248|
-|9     |LUT5    |   318|
+|6     |LUT2    |    70|
+|7     |LUT3    |   101|
+|8     |LUT4    |   265|
+|9     |LUT5    |   333|
 |10    |LUT6    |  1817|
 |11    |MUXF7   |   442|
 |12    |MUXF8   |   139|
@@ -591,36 +594,36 @@ Report Instance Areas:
 +------+--------------+------------------+------+
 |      |Instance      |Module            |Cells |
 +------+--------------+------------------+------+
-|1     |top           |                  |  5167|
-|2     |  cpu         |Pipeline          |  4348|
+|1     |top           |                  |  5168|
+|2     |  cpu         |Pipeline          |  4349|
 |3     |    adder4    |Adder4            |     8|
 |4     |    adderjump |AdderJump         |     8|
 |5     |    alu       |ALU               |    56|
 |6     |    cmp       |Comparator        |    11|
 |7     |    ctrl      |Control           |    86|
-|8     |    dm        |DataMemory        |   113|
-|9     |    exmemreg  |EXMEMReg          |   206|
+|8     |    dm        |DataMemory        |    81|
+|9     |    exmemreg  |EXMEMReg          |   238|
 |10    |    idexreg   |IDEXReg           |   497|
 |11    |    ifidreg   |IFIDReg           |   227|
 |12    |    ig        |ImmGen            |    32|
 |13    |    im        |InstructionMemory |    32|
-|14    |    memwbreg  |MEMWBReg          |  1087|
+|14    |    memwbreg  |MEMWBReg          |  1088|
 |15    |    pc        |PC                |    65|
 |16    |    rf        |RegisterFile      |  1920|
 |17    |  seg         |seg7x16           |    93|
 +------+--------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 884.207 ; gain = 592.219
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 893.461 ; gain = 601.570
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 884.207 ; gain = 228.262
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 884.207 ; gain = 592.219
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 893.461 ; gain = 232.062
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 893.461 ; gain = 601.570
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 780 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 137 instances were transformed.
   LD => LDCE: 105 instances
@@ -629,10 +632,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 106 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 884.207 ; gain = 603.738
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.207 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 893.461 ; gain = 613.082
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 893.461 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Harry/university/CPU/Pipeline/Pipeline.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 01:55:38 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 23:04:07 2023...

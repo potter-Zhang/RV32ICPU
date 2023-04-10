@@ -17,10 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/Harry/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5876-DESKTOP-QTJ7392/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,7 +32,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Harry/university/CPU/Pipeline/Pipeline.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files D:/Harry/Download/fib.coe
-add_files d:/Harry/Download/stuno.coe
+add_files D:/Harry/Download/stuno.coe
 read_verilog -library xil_defaultlib {
   D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/Defines.v
   D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/imports/Download/ALU.v
@@ -66,7 +63,7 @@ read_verilog -library xil_defaultlib {
 read_ip -quiet D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/ip/imem/imem.xci
 set_property used_in_implementation false [get_files -all d:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/ip/imem/imem_ooc.xdc]
 
-read_ip -quiet d:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/ip/blk_mem/blk_mem.xci
+read_ip -quiet D:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/ip/blk_mem/blk_mem.xci
 set_property used_in_implementation false [get_files -all d:/Harry/university/CPU/Pipeline/Pipeline.srcs/sources_1/ip/blk_mem/blk_mem_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

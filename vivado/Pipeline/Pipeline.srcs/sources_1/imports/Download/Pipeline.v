@@ -7,13 +7,6 @@ module Pipeline(
 	input clk,
 	input rst,
 	input [14:0]sw
-	//output [`DATA_WIDTH - 1:0]pcin,
-	//output jump,
-	//output [`DATA_WIDTH - 1:0] reg1,
-	//output [`DATA_WIDTH - 1:0] reg2,
-	//output [`DATA_WIDTH - 1:0] aluout,
-	//output [`DATA_WIDTH - 1:0] aluA,
-	//output [`DATA_WIDTH - 1:0] aluB
 );
 
 // input and output of PC
@@ -73,7 +66,7 @@ wire [`DATA_WIDTH - 1:0]regWriteData_memReadData_MemtoReg;
 wire [`DATA_WIDTH - 1:0]result_imm_LoadSrc;
 wire [`DATA_WIDTH - 1:0]nextPC_targetPC_PCSelect;
 
-// Forward Unit
+// Forward Unit Signal
 wire [1:0] ForwardA;
 wire [1:0] ForwardB;
 wire ForwardC;
@@ -216,19 +209,14 @@ IDEXReg idexreg(.clk(clk), .rst(rst), .I_targetPC(targetPC/*ifidreg_pcout*/), .I
 	.O_readRegister1(idexreg_readRegister1), .O_readRegister2(idexreg_readRegister2));
 
 // EX phase
-
-
 // ALU
-ALU alu(.A(A/*idexreg_regReadData1*/), .B(imm_regReadData2_ALUSrc/*imm_regReadData2_ALUSrc*/), .ALUOp(ALUCon), .result(result), .Zero(Zero), .Less(Less));
+ALU alu(.A(A), .B(imm_regReadData2_ALUSrc), .ALUOp(ALUCon), .result(result), .Zero(Zero), .Less(Less));
 
 // ALUCTRL
 AluControl aluctrl(.ALUOp(idexreg_ALUOp), .funct(idexreg_funct), .ALUCon(ALUCon));
 
-
-
 // select from imm and regReadData2, control by ALUSrc
 Mux mux1(.data1(B), .data2(idexreg_imm), .control(idexreg_ALUSrc), .out(imm_regReadData2_ALUSrc));
-
 
 // select from rmm and nextPC, control by RegSrc
 Mux mux5(.data1(result_imm_LoadSrc), .data2(nextPC_targetPC_PCSelect), .control(idexreg_RegSrc), .out(regWriteData));
@@ -262,21 +250,9 @@ EXMEMReg exmemreg(.clk(clk), .rst(rst), .I_writeRegister(idexreg_writeRegister),
 	.O_regReadData2(exmemreg_regReadData2), .O_readRegister2(exmemreg_readRegister2));
 
 // MEM phase
-
-// for sw_i to write data into data memory
-//wire sw_i_write = 1'b1;
-//reg [31:0]sw_i_writeData;
-//reg [31:0]sw_i_addr;
-
-
-/////////
-
 // DM
 DataMemory dm(.clk(clk), .rst(rst),  .address(!rst ? 17'h10004 : exmemreg_result), /*.sw(sw),*/  .writeData(!rst ? {{(17){1'b0}}, sw} : C/**/), .memRead(exmemreg_MemRead), .memWrite(exmemreg_MemWrite | !rst), 
 	.readData(memReadData), .MemOp(exmemreg_MemOp));
-
-
-
 
 Mux mux8(.data1(exmemreg_regReadData2), .data2(memwbreg_memReadData), .control(ForwardC), .out(C));
 // MEMWBReg
@@ -298,12 +274,6 @@ Mux mux4(.data1(memwbreg_regWriteData), .data2(memwbreg_memReadData), .control(m
 HazardDetectionUnit hdu(.idexreg_MemRead(idexreg_MemRead), .idexreg_RegWrite(idexreg_RegWrite), .idexreg_writeRegister(idexreg_writeRegister), .exmemreg_MemRead(exmemreg_MemRead), .exmemreg_writeRegister(exmemreg_writeRegister),
 		.ifidreg_readRegister1(ifidreg_instruction[19:15]), .ifidreg_opcode(ifidreg_instruction[6:0]), .ifidreg_readRegister2(ifidreg_instruction[24:20]),
 		.PCWrite(PCWrite), .IFIDWrite(IFIDWrite), .Clear(Clear));
-
-// select from 
-//assign aluout = result;
-//assign aluA = A;
-//assign aluB = B;
-
 
 endmodule
 
