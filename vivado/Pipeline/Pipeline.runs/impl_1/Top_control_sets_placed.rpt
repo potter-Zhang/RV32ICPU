@@ -1,0 +1,124 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 01:56:39 2023
+| Host         : DESKTOP-QTJ7392 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    53 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      3 |            2 |
+|      5 |            1 |
+|      7 |            9 |
+|     10 |            1 |
+|     11 |            3 |
+|     12 |            1 |
+|    16+ |           34 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             506 |          174 |
+| No           | No                    | Yes                    |             434 |          140 |
+| No           | Yes                   | No                     |              32 |           10 |
+| Yes          | No                    | No                     |             725 |          424 |
+| Yes          | No                    | Yes                    |             139 |           33 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+-------------------------------------+------------------------------+------------------+----------------+
+|             Clock Signal             |            Enable Signal            |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------------------------+-------------------------------------+------------------------------+------------------+----------------+
+|  cpu/ifidreg/instruction_reg[5]_0    |                                     |                              |                1 |              1 |
+| ~Clk_CPU_BUFG                        |                                     | seg/rstn                     |                1 |              1 |
+|  cpu/ifidreg/instruction_reg[6]_2[0] |                                     |                              |                1 |              3 |
+|  seg/seg7_clk                        |                                     | seg/rstn                     |                1 |              3 |
+|  cpu/ifidreg/E[0]                    |                                     |                              |                2 |              5 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_1 |                              |                6 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_14        |                              |                5 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_25        |                              |                3 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_17        |                              |                5 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_11        |                              |                3 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_13        |                              |                6 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_15        |                              |                5 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_12        |                              |                5 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_16        |                              |                5 |              7 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_21        |                              |                8 |             10 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_19        |                              |                7 |             11 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_24        |                              |                6 |             11 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_22        |                              |                7 |             11 |
+|  Clk_CPU_BUFG                        | cpu/dm/ena0                         |                              |                4 |             12 |
+| ~Clk_CPU_BUFG                        | cpu/idexreg/IFIDWrite               | cpu/idexreg/rstn             |                7 |             20 |
+| ~Clk_CPU_BUFG                        |                                     | cpu/ifidreg/rstn             |                7 |             25 |
+|  clk_IBUF_BUFG                       |                                     |                              |                7 |             26 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[0]_1 |                              |               21 |             31 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[1]_1 |                              |               16 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_2 |                              |               17 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[1]_3 |                              |               15 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[1]_2 |                              |               13 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_5 |                              |               15 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_0 |                              |               27 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[0]_2 |                              |               26 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_20        |                              |               10 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_6 |                              |               17 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[4]_0 |                              |               27 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_7 |                              |               12 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[1]_0 |                              |               23 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_4 |                              |               15 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_23        |                              |               19 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/RegWrite_reg_26        |                              |                9 |             32 |
+| ~Clk_CPU_BUFG                        | cpu/idexreg/IFIDWrite               | cpu/exmemreg/rstn            |               11 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[2]_3 |                              |               22 |             32 |
+| ~Clk_CPU_BUFG                        | result[31]_i_1_n_4                  |                              |               25 |             32 |
+|  Clk_CPU_BUFG                        | cpu/memwbreg/writeRegister_reg[0]_0 |                              |               20 |             32 |
+|  n_0_2865_BUFG                       |                                     |                              |               22 |             32 |
+|  n_3_1299_BUFG                       |                                     |                              |               11 |             32 |
+|  n_1_1298_BUFG                       |                                     |                              |               12 |             32 |
+|  n_2_2786_BUFG                       |                                     | display_data_reg[31]_i_2_n_4 |               10 |             32 |
+|  clk_IBUF_BUFG                       |                                     | seg/rstn                     |               11 |             54 |
+| ~Clk_CPU_BUFG                        |                                     | cpu/memwbreg/rstn            |               21 |             67 |
+| ~Clk_CPU_BUFG                        |                                     | cpu/exmemreg/rstn            |               28 |             80 |
+| ~Clk_CPU_BUFG                        | cpu/idexreg/IFIDWrite               | cpu/ifidreg/rstn             |               15 |             87 |
+| ~Clk_CPU_BUFG                        |                                     | cpu/idexreg/rstn             |               27 |             92 |
+| ~Clk_CPU_BUFG                        |                                     | cpu/idexreg/rstn_0           |               44 |            112 |
+|  Clk_CPU_BUFG                        |                                     |                              |              118 |            375 |
++--------------------------------------+-------------------------------------+------------------------------+------------------+----------------+
+
+

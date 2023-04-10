@@ -1,0 +1,42 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/SoftWare/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 895df128fe384102a6a81906f284bd16 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBenchPipe_behav xil_defaultlib.TestBenchPipe xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.Adder4
+Compiling module xil_defaultlib.IFIDReg
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.BranchForwardingUnit
+Compiling module xil_defaultlib.Mux_4
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.BranchControl
+Compiling module xil_defaultlib.AdderJump
+Compiling module xil_defaultlib.IDEXReg
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.AluControl
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.EXMEMReg
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWBReg
+Compiling module xil_defaultlib.HazardDetectionUnit
+Compiling module xil_defaultlib.Pipeline
+Compiling module xil_defaultlib.TestBenchPipe
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestBenchPipe_behav

@@ -1,0 +1,21 @@
+`define WIDTH 64
+`define DATA_WIDTH 32
+`define BYTE 8
+`define HALF 16
+`define WORD 32
+`define DOUBLEWORD 64
+`define DM_BYTE 3'b000
+`define DM_BYTE_UNSIGNED 3'b100
+`define DM_HALF 3'b001
+`define DM_HALF_UNSIGNED 3'b101
+`define DM_WORD 3'b010
+`define DM_WORD_UNSIGNED 3'b110
+`define DM_DOUBLEWORD 3'b011
+`define HALF_WIDTH 2'b01
+`define WORD_WIDTH 2'b10
+`define DOUBLEWORD_WIDTH 2'b11
+`define ADDR_WIDTH 32
+`define OP_WIDTH 32
+`define SPACE 
+`define PC_WIDTH 32
+`define REG_ADDR_WIDTH 5
