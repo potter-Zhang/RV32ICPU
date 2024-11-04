@@ -1,37 +1,9 @@
-# cpu
+# CPU-Computer Organization and Design
+武汉大学计算机学院 计算机组成与设计课程设计
+通过verilog实现一个单周期的CPU以及五级流水线的CPU，支持RV32I的大部分指令。
+五级流水线CPU支持前递，数据冒险检测等等功能。
+项目包含一个modelsim的版本以及可以烧录至fpga开发板的vivado工程。
 
-#### 介绍
-cpu project
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+Wuhan University, School of Computer Science
+Course Design for Computer Organization and Design
+This project involves implementing a single-cycle CPU and a five-stage pipelined CPU in Verilog, supporting most instructions of the RV32I (Base integer instruction set, 32-bit, RISC-V). The five-stage pipelined CPU includes features such as data forwarding and data hazard detection. The project consists of a version for ModelSim and a Vivado project that can be programmed onto an FPGA development board.
