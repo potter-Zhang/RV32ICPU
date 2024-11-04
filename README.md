@@ -5,5 +5,7 @@
 项目包含一个modelsim的版本以及可以烧录至fpga开发板的vivado工程。
 
 Wuhan University, School of Computer Science
+
 Course Design for Computer Organization and Design
+
 This project involves implementing a single-cycle CPU and a five-stage pipelined CPU in Verilog, supporting most instructions of the RV32I (Base integer instruction set, 32-bit, RISC-V). The five-stage pipelined CPU includes features such as data forwarding and data hazard detection. The project consists of a version for ModelSim and a Vivado project that can be programmed onto an FPGA development board.
